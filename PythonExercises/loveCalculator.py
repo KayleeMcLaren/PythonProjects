@@ -1,4 +1,5 @@
 # Love Calculator
+# You are going to write a program that tests the compatibility between two people.
 
 print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
