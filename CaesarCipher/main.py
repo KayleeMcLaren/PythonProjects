@@ -4,8 +4,9 @@ from alphabet import alphabet
 
 def caesar(start_text, shift_amount, cipher_direction):
     end_text = ""
-    if cipher_direction == "decode":
-        shift_amount *= -1
+    if cipher_direction == "decode":   
+        shift_amount *= -1  # reverses the user's message if they want to decode it
+    # shifts each letter in the message by the given shift number
     for char in start_text:
         if char in alphabet:
             position = alphabet.index(char)
