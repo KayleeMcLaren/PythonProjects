@@ -14,7 +14,7 @@ import os
 from art import logo
 
 
-# function that clears the console between bids
+# function that clears the console between games
 def clear():
     os.system('clear')
 
