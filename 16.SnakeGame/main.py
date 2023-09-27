@@ -39,7 +39,7 @@ while game_is_on:
     #Detects collision with wall -  if it has, the game is over and the scoreboard's game_over() method is called
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
 
     #Detects collision with it's own tail - if it has, the game is over and the scoreboard's game_over() method is called
     for segment in snake.segments:
@@ -47,7 +47,7 @@ while game_is_on:
             pass
         elif snake.head.distance(segment) < 10:
             game_is_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
 
 
 #  tells the screen to wait for the user to click before closing the game window
