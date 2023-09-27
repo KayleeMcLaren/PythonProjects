@@ -15,7 +15,7 @@ class Snake:
         self.create_snake()  # calls the create_snake() method to create the initial segments
         self.head = self.segments[0]  # sets the head of the snake to the first segment
 
-    # Creates a new snake segment for each position in the STARTING_POSITIONS list
+    # Creates a new snake segment for each position in the STARTING_POSITIONS list - 3 starting segments
     def create_snake(self):
         for position in STARTING_POSITIONS:
             self.add_segment(position)  
